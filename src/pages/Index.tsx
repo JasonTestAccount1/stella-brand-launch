@@ -14,7 +14,7 @@ const Index = () => {
           <img src="/images/hero-water.jpg" alt="Female water polo athlete in action" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-primary/60" />
         </div>
-        <div className="relative stella-container px-6 md:px-12 lg:px-24 py-32 md:py-40">
+        <div className="relative stella-container px-6 md:px-12 lg:px-24 py-24 md:py-32">
           <div className="max-w-2xl">
             <span className="stella-label text-primary-foreground/70 animate-fade-in">Performance Swimwear for Water Athletes</span>
             <h1 className="stella-heading-xl text-primary-foreground mt-6 animate-fade-up" style={{ animationDelay: "200ms" }}>
@@ -102,7 +102,7 @@ const Index = () => {
               and looks nothing like anything else in the pool.
             </p>
           </ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             {[
               { icon: Shield, title: "Built to Last", desc: "Reinforced seams, chlorine-resistant fabric, and construction that survives elite training." },
               { icon: Sparkles, title: "Designed with Intent", desc: "Sculptural cuts, considered colour, and details that make a suit feel entirely yours." },
@@ -226,7 +226,7 @@ const Index = () => {
       <section className="stella-section bg-background">
         <div className="stella-container">
           <ScrollReveal>
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <span className="stella-label">Who We're For</span>
               <h2 className="stella-heading-lg text-foreground mt-4">Built for Athletes Like You</h2>
             </div>
@@ -265,7 +265,7 @@ const Index = () => {
       {/* ─── COMMUNITY ─── */}
       <section className="stella-section bg-stella-ice">
         <div className="stella-container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
             <ScrollReveal direction="right">
               <div className="aspect-[4/3] rounded-lg overflow-hidden">
                 <img src="/images/community-team.jpg" alt="STELLA athletes celebrating together" className="w-full h-full object-cover" />

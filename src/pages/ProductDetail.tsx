@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -12,6 +12,11 @@ const ProductDetail = () => {
   const [selectedSize, setSelectedSize] = useState("");
   const [selectedColor, setSelectedColor] = useState("");
   const [qty, setQty] = useState(1);
+
+  // Scroll to top when product changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   if (!product) {
     return (
@@ -40,7 +45,7 @@ const ProductDetail = () => {
       {/* Product */}
       <section className="stella-section-tight">
         <div className="stella-container">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
+          <div className="grid md:grid-cols-2 gap-10 lg:gap-16">
             {/* Image */}
             <ScrollReveal direction="right">
               <div className="aspect-[3/4] rounded-lg overflow-hidden bg-stella-ice relative">

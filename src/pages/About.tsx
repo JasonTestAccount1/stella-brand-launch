@@ -7,7 +7,7 @@ const About = () => {
       {/* Hero */}
       <section className="stella-section bg-stella-ice">
         <div className="stella-container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
             <ScrollReveal direction="right">
               <span className="stella-label">Our Story</span>
               <h1 className="stella-heading-xl text-foreground mt-4">
@@ -49,12 +49,12 @@ const About = () => {
       <section className="stella-section bg-stella-ice">
         <div className="stella-container">
           <ScrollReveal>
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <span className="stella-label">Our Direction</span>
               <h2 className="stella-heading-lg text-foreground mt-4">What STELLA Wants to Change</h2>
             </div>
           </ScrollReveal>
-          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
             {[
               { title: "From generic to personal", desc: "Swimwear should reflect the athlete wearing it — not a corporate design brief." },
               { title: "From disposable to durable", desc: "We're building suits that survive seasons of serious play, not just weeks." },
@@ -75,7 +75,7 @@ const About = () => {
       {/* Mission, Vision, Values */}
       <section className="stella-section bg-background">
         <div className="stella-container max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-10">
             {[
               {
                 label: "Mission",

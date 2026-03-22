@@ -43,7 +43,7 @@ const Community = () => {
       <section className="stella-section bg-stella-ice">
         <div className="stella-container">
           <ScrollReveal>
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <span className="stella-label">Get Involved</span>
               <h2 className="stella-heading-lg text-foreground mt-4">Grow With Us</h2>
             </div>

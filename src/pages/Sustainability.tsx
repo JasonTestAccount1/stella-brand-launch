@@ -45,7 +45,7 @@ const Sustainability = () => {
       <section className="stella-section bg-stella-ice">
         <div className="stella-container">
           <ScrollReveal>
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <span className="stella-label">Our Commitments</span>
               <h2 className="stella-heading-lg text-foreground mt-4">How We're Building</h2>
             </div>

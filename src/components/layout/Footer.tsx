@@ -1,26 +1,27 @@
 import { Link } from "react-router-dom";
 import { Instagram, Mail } from "lucide-react";
+import { Logo } from "@/components/Logo";
 
 export const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="stella-container stella-section">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+      <div className="stella-container px-6 md:px-12 lg:px-24 py-12 md:py-14">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6">
           {/* Brand */}
           <div className="md:col-span-1">
-            <span className="font-display font-800 text-2xl tracking-[0.15em]">STELLA</span>
-            <p className="mt-4 text-sm font-body font-300 opacity-70 leading-relaxed max-w-xs">
+            <Logo size="md" variant="light" />
+            <p className="mt-3 text-xs font-body font-300 opacity-70 leading-relaxed max-w-xs">
               Performance swimwear for female water athletes. Where strength meets femininity.
             </p>
           </div>
 
           {/* Shop */}
           <div>
-            <h4 className="font-display font-600 text-sm tracking-wide mb-4">Shop</h4>
-            <ul className="space-y-2">
+            <h4 className="font-display font-600 text-xs tracking-wide mb-3 uppercase">Shop</h4>
+            <ul className="space-y-1.5">
               {["Competition", "Training", "Signature Collection", "Essentials"].map((item) => (
                 <li key={item}>
-                  <Link to="/shop" className="text-sm font-body opacity-60 hover:opacity-100 transition-opacity">
+                  <Link to="/shop" className="text-xs font-body opacity-60 hover:opacity-100 transition-opacity">
                     {item}
                   </Link>
                 </li>
@@ -30,8 +31,8 @@ export const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="font-display font-600 text-sm tracking-wide mb-4">Company</h4>
-            <ul className="space-y-2">
+            <h4 className="font-display font-600 text-xs tracking-wide mb-3 uppercase">Company</h4>
+            <ul className="space-y-1.5">
               {[
                 { label: "About", href: "/about" },
                 { label: "Sustainability", href: "/sustainability" },
@@ -40,7 +41,7 @@ export const Footer = () => {
                 { label: "Contact", href: "/contact" },
               ].map((item) => (
                 <li key={item.href}>
-                  <Link to={item.href} className="text-sm font-body opacity-60 hover:opacity-100 transition-opacity">
+                  <Link to={item.href} className="text-xs font-body opacity-60 hover:opacity-100 transition-opacity">
                     {item.label}
                   </Link>
                 </li>
@@ -50,27 +51,27 @@ export const Footer = () => {
 
           {/* Connect */}
           <div>
-            <h4 className="font-display font-600 text-sm tracking-wide mb-4">Connect</h4>
-            <ul className="space-y-2">
+            <h4 className="font-display font-600 text-xs tracking-wide mb-3 uppercase">Connect</h4>
+            <ul className="space-y-1.5">
               <li>
-                <a href="#" className="text-sm font-body opacity-60 hover:opacity-100 transition-opacity inline-flex items-center gap-2">
+                <a href="#" className="text-xs font-body opacity-60 hover:opacity-100 transition-opacity inline-flex items-center gap-2">
                   <Instagram size={14} /> Instagram
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@stellaswim.com" className="text-sm font-body opacity-60 hover:opacity-100 transition-opacity inline-flex items-center gap-2">
+                <a href="mailto:hello@stellaswim.com" className="text-xs font-body opacity-60 hover:opacity-100 transition-opacity inline-flex items-center gap-2">
                   <Mail size={14} /> hello@stellaswim.com
                 </a>
               </li>
             </ul>
-            <div className="mt-6">
+            <div className="mt-4">
               <p className="text-xs font-body opacity-40">Newsletter coming soon</p>
             </div>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-16 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mt-8 pt-6 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs font-body opacity-40">© 2026 STELLA. All rights reserved.</p>
           <div className="flex gap-6">
             {["Terms & Conditions", "Privacy Policy", "Shipping & Returns"].map((item) => (
