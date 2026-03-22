@@ -48,8 +48,8 @@ export const ScrollReveal = ({ children, className = "", delay = 0, direction = 
   return (
     <div
       ref={ref}
-      className={`transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] blur-[3px] ${
-        isVisible ? baseVisible : `${baseHidden} ${directionClass}`
+      className={`transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+        isVisible ? baseVisible : `${baseHidden} ${directionClass} blur-[3px]`
       } ${className}`}
       style={{ transitionDelay: `${delay}ms` }}
     >
