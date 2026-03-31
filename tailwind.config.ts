@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         display: ["Outfit", "system-ui", "sans-serif"],
         body: ["DM Sans", "system-ui", "sans-serif"],
+        water: ["Caveat", "cursive"],
       },
       fontWeight: {
         300: "300",

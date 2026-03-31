@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { NewsletterSection } from "@/components/NewsletterSection";
+import { Water } from "@/components/Water";
 import { products } from "@/data/products";
 import { ArrowRight, Droplets, Shield, Sparkles, Heart, Users } from "lucide-react";
 
@@ -18,7 +19,7 @@ const Index = () => {
           <div className="max-w-2xl">
             <span className="stella-label text-primary-foreground/70 animate-fade-in">Performance Swimwear for Water Athletes</span>
             <h1 className="stella-heading-xl text-primary-foreground mt-6 animate-fade-up" style={{ animationDelay: "200ms" }}>
-              Engineered for the Water. Designed for Her.
+              Engineered for the <Water capitalize />. Designed for Her.
             </h1>
             <p className="mt-6 text-lg md:text-xl font-body font-300 text-primary-foreground/80 max-w-lg leading-relaxed animate-fade-up" style={{ animationDelay: "400ms" }}>
               Premium swimwear built for female water polo athletes who refuse to choose between strength and style.
