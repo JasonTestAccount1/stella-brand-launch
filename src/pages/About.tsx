@@ -45,8 +45,44 @@ const About = () => {
         </div>
       </section>
 
-      {/* What We Want to Change */}
+      {/* Meet the Founder */}
       <section className="stella-section bg-stella-ice">
+        <div className="stella-container">
+          <div className="grid md:grid-cols-2 gap-10 items-center max-w-4xl mx-auto">
+            <ScrollReveal direction="left">
+              <div className="aspect-square rounded-lg overflow-hidden bg-muted">
+                <img src="/images/about-athlete.jpg" alt="Sterre Gilissen - Founder & CEO of STELLA" className="w-full h-full object-cover" />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal direction="right">
+              <span className="stella-label">Meet the Founder</span>
+              <h2 className="stella-heading-lg text-foreground mt-4">
+                Sterre Gilissen
+              </h2>
+              <p className="font-body font-500 text-stella-coral mt-2">Founder & CEO</p>
+              <p className="stella-body mt-6">
+                Sterre is an International Business student at Zuyd Hogeschool in Maastricht, 
+                currently completing her final internship at the MECC Maastricht — one of the 
+                Netherlands' leading convention centers.
+              </p>
+              <p className="stella-body mt-4">
+                As a water polo athlete herself, she experienced firsthand the frustration of 
+                swimwear that performed well but felt like an afterthought in design. STELLA 
+                was born from that gap — a vision to create performance swimwear that female 
+                athletes actually want to wear.
+              </p>
+              <p className="stella-body mt-4">
+                With her business background and deep understanding of what athletes need, 
+                Sterre is building STELLA to prove that strength and femininity belong together 
+                — in the pool and beyond.
+              </p>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Want to Change */}
+      <section className="stella-section bg-background">
         <div className="stella-container">
           <ScrollReveal>
             <div className="text-center mb-12">
